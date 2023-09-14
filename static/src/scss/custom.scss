@@ -1,0 +1,24 @@
+$def-color : blue;
+$def-height : 40px;
+$def-width : 145px;
+
+@mixin btn-width-color($x:$def-height,$y:$def-width,$clr:$def-color){
+    height: $x;
+    width: $y;
+    background-color: $clr;
+}
+
+
+#democontainer{
+    justify-content: flex-start;
+}
+
+#btn1{
+    @include btn-width-color()
+}
+#btn2{
+    @include btn-width-color(70px,160px,red)
+}
+#btn3{
+    @include btn-width-color(100px,200px,yellow)
+}

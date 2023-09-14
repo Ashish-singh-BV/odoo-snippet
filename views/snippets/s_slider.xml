@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="slidebar" name="slidebar">
+    <!-- <link rel="stylesheet" type="text/scss" href="/custom_website/static/src/scss/custom.scss"/> -->
+    <section>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container" id="democontainer">
+          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample">
+            <img src="web/image/custom_website.logo_img" alt="logo" width="30" height="24" />
+          </a>
+        </div>
+      </nav>
+
+    </section>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like,
+          text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button> -->
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul> -->
+          <ul class="list-group">
+            <li class="list-group-item">A simple default list group item</li>
+          
+            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+            <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+            <li class="list-group-item list-group-item-success">A simple success list group item</li>
+            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+            <li class="list-group-item list-group-item-info">A simple info list group item</li>
+            <li class="list-group-item list-group-item-light">A simple light list group item</li>
+            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </template>
+
+ 
+
+</odoo>

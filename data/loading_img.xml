@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="custom_website.logo_img" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">logo.jpg</field>
+        <field name="type">url</field>
+        <field name="url">/custom_website/static/src/img/logo.jpg</field>
+    </record>
+
+</odoo>

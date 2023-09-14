@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="external_snippets" inherit_id="website.snippets" priority="8">
+        <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="custom_website.buttons" />
+            <t t-snippet="custom_website.slidebar" />
+
+        </xpath>
+    </template>
+
+</odoo>

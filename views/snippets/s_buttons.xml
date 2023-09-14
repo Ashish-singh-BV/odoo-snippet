@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="buttons" name="buttons">
+  <section>
+    <div class="container">
+      <button type="button" class="btn" id='btn'>Base class</button>
+      <button type="button" class="btn" id='btn1'>Base class</button>
+      <button type="button" class="btn" id='btn2'>Base class</button>
+      <button type="button" class="btn" id='btn3'>Base class</button>
+    </div>
+  </section>
+</template>
+
+  
+
+
+</odoo>
