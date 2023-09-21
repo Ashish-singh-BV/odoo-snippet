@@ -1,4 +1,4 @@
-$def-color : blue;
+$def-color : rgb(0, 255, 221);
 $def-height : 40px;
 $def-width : 145px;
 
@@ -20,5 +20,5 @@ $def-width : 145px;
     @include btn-width-color(70px,160px,red)
 }
 #btn3{
-    @include btn-width-color(100px,200px,yellow)
+    @include btn-width-color(10px,40px,yellow)
 }

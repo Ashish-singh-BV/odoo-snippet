@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="form_template" name="static">
+    <t t-call="website.layout">
+      <section class="container" id="custom_section">
+
+        <t t-block="slider">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="web/image/custom_website.img1" class="d-block w-100" alt="Not Available" />
+              </div>
+              <div class="carousel-item">
+                <img src="web/image/custom_website.img2" class="d-block w-100" alt="Not Available" />
+              </div>
+              <div class="carousel-item">
+                <img src="web/image/custom_website.img3" class="d-block w-100" alt="Not Available" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </t>
+        <t t-block="popup">
+          
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="pop_msg">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="redirect_button" >Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </t>
+
+        <t t-block="form">
+          <form method="post" class="oe_form_container" id="form_submit">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="employee_name" class="form-label">first Name</label>
+                  <input type="text" name="employee_name" class="form-control" id='first_name'
+                    required='true' />
+                </div>
+                <div class="form-group">
+                  <label for="city" class="form-label">last name</label>
+                  <input type="text" name="city" class="form-control" id='last_name' required='1' />
+                </div>
+                <!-- <div class="form-group">
+                            <span id="message"></span>
+                        </div> -->
+                <br />
+                <button type="button" id="submit_button" class="btn btn-primary">Submit</button>
+                <br />
+              </div>
+            </div>
+          </form>
+        </t>
+      </section>
+    </t>
+  </template>
+
+</odoo>

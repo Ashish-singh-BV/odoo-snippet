@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+        
+        <t t-name="custom_website.student_info_qweb">
+            <t t-foreach="data" t-as="rec">
+                <ul>
+                    <li>
+                        <t t-out="rec.name"></t>
+                        <t t-out="rec.code"></t>
+                    </li>
+                </ul>
+                        
+            </t>
+        </t>
+</templates>

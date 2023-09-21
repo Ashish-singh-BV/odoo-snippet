@@ -7,5 +7,23 @@
         <field name="type">url</field>
         <field name="url">/custom_website/static/src/img/logo.jpg</field>
     </record>
+    <record id="custom_website.img1" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">img1.jpeg</field>
+        <field name="type">url</field>
+        <field name="url">/custom_website/static/src/img/img1.jpeg</field>
+    </record>
+    <record id="custom_website.img2" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">img2.jpeg</field>
+        <field name="type">url</field>
+        <field name="url">/custom_website/static/src/img/img2.jpeg</field>
+    </record>
+    <record id="custom_website.img3" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="name">img3.jpeg</field>
+        <field name="type">url</field>
+        <field name="url">/custom_website/static/src/img/img3.jpeg</field>
+    </record>
 
 </odoo>
